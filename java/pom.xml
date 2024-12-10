@@ -47,5 +47,6 @@
   </build>
   <modules>
     <module>conjoined-twin-tree</module>
+    <module>conjoined-twin-tree-variant</module>
   </modules>
 </project>

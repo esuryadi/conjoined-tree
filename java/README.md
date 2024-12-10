@@ -5,6 +5,10 @@
 The Conjoined Twin Tree data structure is an implementation of Conjoined Tree data structure that has 2 roots which
 represent 2 different axis. This data structure forms a 2-dimensional matrix that commonly used in a pivot table.
 
+There are 2 version of Conjoined Twin Tree data structure implementation:
+1. conjoined-twin-tree: Strict version of value type on branch and leaf nodes. All branches and leaves must have the same value type.
+2. conjoined-twin-tree-variant: Flexible version of value type on branch and leaf nodes. Branches and leaves can have different value types.
+
 Documentation Concept: https://edsuryadi.atlassian.net/wiki/external/NzM1Mjk1NDUwOWU4NGIwZDg5MGQxYWMzMTdhN2M4YWM
 
 ## Usage
@@ -56,4 +60,4 @@ List<List<TreeNode<?,?>>> colNodes = twinTree.traverseBranches(twinTree.getRoot2
 // Traverse the leaf nodes of the ConjoinedTwinTree and return the map of the leaf nodes by its row and branch nodes location
 Map<List<TreeNode<?,?>>, Map<List<TreeNode<?,?>>, TreeNode<?,?>>> leafNodesMap = twinTree.traverseLeafs(rowNodes);
 ```
-Other examples of Conjoined Tree operations can be found in the test cases.
+For the variant version, simply remove the generic declaration. Other examples of Conjoined Tree operations can be found in the test cases.
