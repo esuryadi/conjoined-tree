@@ -2,13 +2,14 @@
 
 ## Conjoined Tree Data Structure
 
-The Conjoined Tree data structure is a graph data structure that has multiple roots and branches but share the same
-leaves among the root and branches. The Conjoined Tree is designed to represent shareable/intersect matrix data
-between multi different axis, e.g. a pivot table. The main benefit of a Conjoined Tree data structure is it allows
-structure modification such as adding, inserting, deleting, sorting, filtering, swapping on either rows or columns in 
-the pivot table. The other benefit of Conjoined Tree is it allows items order change (re-ordering) without the need 
-to reorder items along its axis. For example when you sort one of column values within a pivot table, the other values 
-along the axis will automatically follow without any extra effort to re-arrange them.
+The Conjoined Twin Tree (Conjoined Twin Tree) is a graph data structure that comprises two distinct roots and branches, 
+yet shares the same leaves. This data structure is specifically designed to represent shareable or intersecting matrix 
+data between the two axes, akin to a pivot table. The primary advantage of the Conjoined Twin Tree data structure lies 
+in its ability to facilitate structure modifications, such as adding, inserting, deleting, sorting, filtering, and 
+swapping elements on either rows or columns within the pivot table. Furthermore, the Conjoined Twin Tree enables the 
+reordering of items without the necessity of reordering them along its axis. For instance, when sorting one of the 
+column values within a pivot table, the corresponding values along the axis will automatically follow suit, eliminating 
+the need for manual rearrangement.
 
 Documentation Concept: https://edsuryadi.atlassian.net/wiki/external/NzM1Mjk1NDUwOWU4NGIwZDg5MGQxYWMzMTdhN2M4YWM
 
