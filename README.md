@@ -17,6 +17,15 @@ This enables dynamic insertions, deletions, sorting, and filtering along any axi
 
 ---
 
+## 🔁 Key Advantages
+
+- Sort/filter/insert/delete from any axis — no global rearrangement needed
+- Supports **shared leaf nodes**, making it ideal for **sparse or intersecting data**
+- Naturally models **multi-dimensional relationships**
+- Scales up to **N dimensions**, not just rows × columns
+
+---
+
 ## 💡 Why It Matters
 
 | Traditional Structure | Conjoined Tree |
@@ -48,6 +57,17 @@ With Conjoined Tree:
 - Shared leaf nodes maintain alignment automatically
 
 This creates more efficient pivot operations with minimal data manipulation.
+
+---
+
+## 🧠 Use Cases
+
+- Pivot table engines
+- OLAP cubes
+- Multi-dimensional sparse matrix modeling
+- Machine learning feature stores
+- Graph-based knowledge representations
+- UI backends for complex data grids
 
 ---
 

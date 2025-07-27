@@ -5,6 +5,16 @@ a novel multi-root, shared-leaf graph structure designed for dynamic, multi-dime
 
 ---
 
+## 📦 Features
+- Supports two-axis Conjoined Trees (rows + columns)
+- Allows dynamic:
+  - Adding and inserting branch or leaf nodes
+  - Sorting leaf nodes by values
+  - Filtering by criteria
+  - Traversing in row-major or column-major order
+
+---
+
 ## 📦 What's Included
 
 This package provides:
@@ -25,22 +35,22 @@ This package provides:
 - **Branch nodes**: Hierarchical containers under each root
 - **Leaf nodes**: Shared by one branch from each axis
 
-### 🌿 Leaf Nodes = Shared Data
+## 🌿 Leaf Nodes = Shared Data
 
 Each leaf node has two parents: one from each dimension.  
 This allows **sorting, filtering, and inserting in one dimension** without disrupting the other.
 
 ---
 
-### ✅ How to Use
+## ✅ How to Use
 
-## 🧱 Instantiate the tree
+### 🧱 Instantiate the tree
 
 ```java
 ConjoinedTwinTree<String, Integer> twinTree = new ConjoinedTwinTree<>();
 ```
 
-## 🌲 Add branches and leaves
+### 🌲 Add branches and leaves
 
 ```java
 // Add branches to each root (row & column)
@@ -56,7 +66,7 @@ LeafNode<String, Integer> leaf3 = rowB.addLeaf(3, colP);
 LeafNode<String, Integer> leaf4 = rowB.addLeaf(4, colQ);
 ```
 
-## 🔁 Traverse the tree
+### 🔁 Traverse the tree
 
 ```java
 // Traverse the row branch axis of the ConjoinedTwinTree and return the list of branch hierarchy
@@ -74,7 +84,7 @@ TreeNode<String, Integer> value = leafMap.get(rowBranches.get(0)).get(colBranche
 System.out.println("Leaf value: " + value.getValue());
 ```
 
-## 🔁 Search, filter, or sort the tree
+### 🔁 Search, filter, or sort the tree
 ```java
 // Search for a branch that has "foo" as a value within ConjoinedTwinTree
 TreeNode<String, String> fooNode = twinTree.search((branch, leaf) -> "foo".equals(branch), LOCATION.BRANCH);
@@ -99,7 +109,9 @@ twinTree.sort(twinTree.getRootNode1(), (node1, node2) -> node1.getBranchValue().
        "B" -- 3 --- 4
 ```
 
-### 🔬 Extend It
+---
+
+## 🔬 Extend It
 
 You can expand the tree to:
 - Sort leaf nodes dynamically
@@ -108,7 +120,17 @@ You can expand the tree to:
 
 If you’d like to collaborate on an N-dimensional extension or alternative language version, please open a PR or issue.
 
-### 👨‍💻 Contributed By
+---
+
+## 🔧 Future Work
+- Generalize to N-dimensional Conjoined Trees
+- Improve memory efficiency
+- Add unit tests and benchmarks
+- Build visual explorer for debugging
+
+---
+
+## 👨‍💻 Contributed By
 **Edward Suryadi**  
 Inventor of the Conjoined Tree  
 [LinkedIn](https://www.linkedin.com/in/edward-suryadi/) · [Article](https://www.linkedin.com/pulse/tree-two-roots-new-data-structure-multi-dimensional-thinking-suryadi-czycc/)
