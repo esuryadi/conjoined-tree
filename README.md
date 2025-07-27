@@ -1,23 +1,94 @@
-# conjoined-tree
+# 🌳 Conjoined Tree — Data Structure for Multi-Dimensional Modeling
 
-## Conjoined Tree Data Structure
+**Invented by Edward Suryadi**  
+Patent-pending · Open source · Designed for dynamic, multi-axis data handling
 
-The Conjoined Twin Tree (Conjoined Twin Tree) is a graph data structure that comprises two distinct roots and branches, 
-yet shares the same leaves. This data structure is specifically designed to represent shareable or intersecting matrix 
-data between the two axes, akin to a pivot table. The primary advantage of the Conjoined Twin Tree data structure lies 
-in its ability to facilitate structure modifications, such as adding, inserting, deleting, sorting, filtering, and 
-swapping elements on either rows or columns within the pivot table. Furthermore, the Conjoined Twin Tree enables the 
-reordering of items without the necessity of reordering them along its axis. For instance, when sorting one of the 
-column values within a pivot table, the corresponding values along the axis will automatically follow suit, eliminating 
-the need for manual rearrangement.
+---
 
-Documentation Concept: https://edsuryadi.atlassian.net/wiki/external/NzM1Mjk1NDUwOWU4NGIwZDg5MGQxYWMzMTdhN2M4YWM
+## 🚀 What It Is
 
-The current implementation in this git repo is an implementation of Conjoined Twin Tree data structure which is a 
-Conjoined Tree that contains 2 roots. This data structure is used to represent a pivot table. However, I welcome anyone
-to contribute any N-number of Conjoined Tree data structure implementation in different programming language.
+The **Conjoined Tree** (also known as the Conjoined Twin Tree when limited to two axes) is a novel graph-based data structure with:
 
-## Patent Information
-Patent Pending: US 18/676076, US 18/676,081, US 18/676,086
-Inventor: Edward Suryadi
-Current Assignee: Workday, Inc.
+- **Multiple root nodes** (e.g., for rows, columns, time, dimension X)
+- **Branch hierarchies** under each root
+- **Shared leaf nodes** that have one parent in each axis hierarchy
+
+This enables dynamic insertions, deletions, sorting, and filtering along any axis—without realigning or moving entire rows/columns. It shines in pivot‑table–style datasets and multi-dimensional data models.
+
+---
+
+## 💡 Why It Matters
+
+| Traditional Structure | Conjoined Tree |
+|-----------------------|----------------|
+| 2D Arrays / Matrices | Unfolds to N dimensions |
+| Pivot operations require full row/column reordering | Sort/filter at axis node-level only |
+| Sparse data requires many empty cells | Sparsity handled natively via shared leaves |
+| Moves data to rearrange views | Structures views without copying leaf data |
+
+---
+
+## 🧪 Example Use Case: Pivot Table Replacement
+
+Without Conjoined Tree:
+- Sorting by column P‑a requires full row movement
+
+With Conjoined Tree:
+- Reorder just the P‑a branch
+- Shared leaf nodes maintain alignment automatically
+
+This creates more efficient pivot operations with minimal data manipulation.
+
+---
+
+## ⚙️ Java Implementation (Current)
+
+You’ll find Java code under `java/` that implements the **two-axis version** of the Conjoined Tree. It covers:
+- Dual-root tree structure
+- Traversal methods
+- Branch sorting and leaf alignment
+
+Contributions extending this to **three or more axes (N-dimensional)** or in **other programming languages** are highly encouraged.
+
+---
+
+## 🛠️ Getting Started
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/esuryadi/conjoined-tree.git
+   ```
+2.	Explore the Java implementation at conjoined-tree/java/
+3.	Run tests and benchmarks
+4.	Extend, refactor, or port to your preferred language
+5.	Contribute back via pull requests or discussions
+
+---
+
+## 🔍 Documentation & Resources
+- 📄 Full technical spec: Confluence Documentation
+- 🧾 Patent filings: US 18/676076, 18/676081, 18/676086 (Inventor: Edward Suryadi; Assigned to Workday, Inc.)
+- 🧠 Blog article: “The Tree with Two Roots: A New Data Structure for Multi-Dimensional Thinking” ([LinkedIn Pulse](https://www.linkedin.com/pulse/tree-two-roots-new-data-structure-multi-dimensional-thinking-suryadi-czycc/))
+
+---
+
+## 💬 Get Involved
+
+Want to:
+- Extend to N dimensions?
+- Add language implementations (Python, C#, JavaScript)?
+- Build visualization tools or GUIs?
+- Share real-world use cases?
+
+Open an issue or a pull request and join the conversation!
+
+---
+
+## 🏷️ License
+
+Licensed under the Apache License, Version@2.0
+
+---
+
+© 2025 Edward Suryadi  
+Inventor, developer, and evangelist of the Conjoined Tree structure
