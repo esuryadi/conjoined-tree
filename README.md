@@ -76,15 +76,15 @@ Contributions extending this to **three or more axes (N-dimensional)** or in **o
 ---
 
 ## 🔍 Documentation & Resources
-- 📄 Full technical spec: [Confluence Documentation](https://edsuryadi.atlassian.net/wiki/external/NzM1Mjk1NDUwOWU4NGIwZDg5MGQxYWMzMTdhN2M4YWM)
-- 🧾 Patent filings: US 18/676076, 18/676081, 18/676086 (Inventor: Edward Suryadi; Assigned to Workday, Inc.)
-- 🧠 Blog article: “The Tree with Two Roots: A New Data Structure for Multi-Dimensional Thinking” ([LinkedIn Pulse](https://www.linkedin.com/pulse/tree-two-roots-new-data-structure-multi-dimensional-thinking-suryadi-czycc/))
+- 📄 **Full technical spec:** [Confluence Documentation](https://edsuryadi.atlassian.net/wiki/external/NzM1Mjk1NDUwOWU4NGIwZDg5MGQxYWMzMTdhN2M4YWM)
+- 🧾 **Patent filings:** US 18/676076, 18/676081, 18/676086 (Inventor: Edward Suryadi; Assigned to Workday, Inc.)
+- 🧠 **Blog article:** “The Tree with Two Roots: A New Data Structure for Multi-Dimensional Thinking” ([LinkedIn Pulse](https://www.linkedin.com/pulse/tree-two-roots-new-data-structure-multi-dimensional-thinking-suryadi-czycc/))
 
 ---
 
 ## 💬 Get Involved
 
-Want to:
+**Want to:**
 - Extend to N dimensions?
 - Add language implementations (Python, C#, JavaScript)?
 - Build visualization tools or GUIs?
