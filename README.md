@@ -30,6 +30,16 @@ This enables dynamic insertions, deletions, sorting, and filtering along any axi
 
 ## 🧪 Example Use Case: Pivot Table Replacement
 
+Consider you have the following pivot table:
+
+|       |     | **P** |       | **Q** |       |
+|-------|-----|-------|-------|-------|-------|
+|       |     | **a** | **b** | **a** | **b** |
+| **A** | 1   |   4   |   5   |   9   |  15   |
+|       | 2   |   2   |   6   |  10   |  14   |
+| **B** | 1   |   1   |   8   |  11   |  16   |
+|       | 2   |   3   |   7   |  12   |  13   |
+
 Without Conjoined Tree:
 - Sorting by column P‑a requires full row movement
 
